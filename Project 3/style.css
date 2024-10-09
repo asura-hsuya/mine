@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+.bg {
+    height: 720px;
+    background-image: url(Asset/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+body {
+    max-width: 1496px;
+    max-height: 850px;
+}
+
+nav {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 4px 6px 6px 6px;
+    /* background-color: red; */
+
+}
+
+nav a {
+    width: 12.5%;
+
+
+}
+
+ul {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    gap: 33px;
+    align-items: center;
+    margin-right: 13.5%;
+    /* background-color: red; */
+
+}
+
+.bold {
+    font-weight: 600;
+
+}
+
+ul a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.48px;
+    width: 100%;
+}
+
+.one {
+    width: 18%;
+
+    align-content: center;
+}
+
+.btn1 {
+    width: 44%;
+    height: 50%;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-right: 15px;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn1::before {
+    position: absolute;
+    transition: all 0.3s;
+    content: "";
+    left: 45%;
+    right: 45%;
+    top: 35%;
+    bottom: 35%;
+    border-radius: 100px;
+    /* z-index: 10;
+    background-color: red; */
+
+}
+
+.btn1:hover::before {
+    /* position: absolute; */
+    inset: 0 0 0 0;
+    border-radius: 0;
+    z-index: -1;
+    background-color: white;
+}
+
+
+.btn1:hover {
+    color: #0052A9;
+    /* position: relative; */
+}
+
+.btn2:hover {
+    color: #0052A9;
+    /* position: relative; */
+}
+
+.btn2:hover::before {
+    /* position: absolute; */
+    inset: 0 0 0 0;
+    border-radius: 0;
+    z-index: -1;
+    background-color: white;
+}
+
+.btn2::before {
+    position: absolute;
+    transition: all 0.3s;
+    content: "";
+    left: 45%;
+    right: 45%;
+    top: 35%;
+    bottom: 35%;
+    border-radius: 100px;
+    /* z-index: 10;
+    background-color: red; */
+
+}
+
+.btn2 {
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    width: 40%;
+    height: 50%;
+    /* border: 2px solid white; */
+    border: none;
+    background: #0052A9;
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.divider {
+    width: 100%;
+    height: 1.5px;
+    background-color: #ffffff;
+    /* top: 30px; */
+    position: relative;
+    opacity:0.34;
+    display: flex;
+    align-items: center;
+    
+}
+.rectangle{
+    width: 45px;
+    height: 5px;
+    left: 445px;
+    border-radius: 33px;
+    position: absolute;
+    background: linear-gradient(to right, #00b0ff, rgba(2, 136, 199,0));
+    /* background-color: red; */
+    z-index: 4;
+    
+}
+
+.spark {
+   animation: spar 10s ease-out  infinite ;
+    
+  
+}
+
+h1 {
+    width: 50%;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    text-align: left;
+    
+
+}
+
+.content {
+    /* width: 26%; */
+    margin: 5.3% 8%;
+    color: white;
+
+}
+.info{
+    text-align: left;
+    width: 33%;
+    margin-top: 17px;
+}
+.info button{
+    margin-top: 29px;
+    width: 151px;
+    height: 47px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, #4ad0ed, #005aad);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 300ms ease-out;
+    box-shadow: inset 0 0 0 0 #eb6300;
+    
+}
+/* .absolute{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+.small{
+    background-color: #0052a9;
+    width: 147px;
+    height: 37px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin: auto;
+}
+.form form{
+    display: flex;
+    width: 60%;
+    height: 7em;
+    /* background-color: red; */
+    margin: auto;
+    align-items: end;
+    justify-content: space-evenly;
+    border-radius: 16px;
+    box-shadow: 0px 0px 6.1px 0px #00000033;
+
+padding-bottom: 15px;
+background-color: white;
+
+}
+.info button:hover{
+    box-shadow: inset 200px 0 0 0 #eb6300;
+}
+
+form p{
+    font-weight: 600;
+    size: 14px;
+    line-height: 28px;
+}
+form div{
+    width: 18%;
+    align-content: end;
+    /* background-color: blue; */
+}
+div label{
+    font-size: 13px;
+    line-height: 18px;
+    
+}
+div select{
+    font-size: 13px;
+    height: 40px;
+    width: 155px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+}
+option{
+    font-family: "Poppins", sans-serif;
+    
+}
+form input{
+    width: 92px;
+    height: 37px;
+    background-color: #0052a9;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    
+}
+.absolute{
+    position: relative;
+    top: -95px;
+    
+}
+
+
+@keyframes spar {
+    0% {
+        background: linear-gradient(to right, #FF4343, #FF5FD2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+    }
+    
+    16% {
+        background: linear-gradient(to right, #F48926, #FBE628);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+    
+    32% {
+        background: linear-gradient(to right, #FFE81C, #5BF426);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
+    
+    48% {
+        background: linear-gradient(to right, #26f460, #1CFFF1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
+    
+    64% {
+        background: linear-gradient(to right, #1CD6FF, #2647f4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
+    
+    100% {
+        background: linear-gradient(to right, #4326f4, #ed1cff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
+
+}
+
+
+@media (min-width:1496px) {
+    body {
+        max-width: 1920px;
+    }
+
+}
